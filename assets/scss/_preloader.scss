@@ -277,7 +277,7 @@ input.main-search-input::placeholder {
     font-size: 18px;
     position: fixed;
     display: inline-block;
-    z-index: 99;
+    z-index: 999;
     right: 30px;
     bottom: 30px;
     @include transition;

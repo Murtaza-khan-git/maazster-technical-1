@@ -296,6 +296,14 @@
 	.container-fluid {
 		padding: 0 150px;
 
+		@include breakpoint (max-xxxl){
+			padding: 0 40px;
+		}
+
+		@include breakpoint (max-xxl){
+			padding: 0 20px;
+		}
+
 		@include breakpoint (max-xl){
 			padding: 0 30px;
 		}

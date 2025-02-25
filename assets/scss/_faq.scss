@@ -42,19 +42,19 @@
                 }
 
                 &::after {
-                    // content: "\2b";
-                    // font-family: "Font Awesome 6 Free";
-                    // background: transparent;
+                    content: "\f324";
+                    font-family: "Font Awesome 6 Pro";
+                    background: transparent;
                     font-weight: 500;
                     transition: all 0.3s ease-in-out !important;
-                    background-image: url(../../assets/img/chevron-right.svg);
+                   // background-image: url(../../assets/img/chevron-right.svg);
                     color: $theme-color;
                 }
                 &:not(.collapsed)::after {
-                    // content: "\f068";
-                    // font-family: "Font Awesome 6 Free";
-                    // background: transparent;
-                    background-image: url(../../assets/img/chevron-down.svg);
+                    content: "\f322";
+                    font-family: "Font Awesome 6 Pro";
+                    background: transparent;
+                   // background-image: url(../../assets/img/chevron-down.svg);
                     font-weight: 500;
                     color: $theme-color;
                     transform: rotate(0);

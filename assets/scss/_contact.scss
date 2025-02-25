@@ -307,12 +307,17 @@
     border-radius: 10px;
     background: #FAF8FF;
 
+    .icon {
+        font-size: 80px;
+        color: $theme-color;
+    }
+
     .content {
-        margin-top: 20px;
+        margin-top: 30px;
 
         p {
             font-size: 18px;
-            margin-top: 5px;
+            margin-top: 10px;
         }
     }
 }

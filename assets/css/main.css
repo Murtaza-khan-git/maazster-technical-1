@@ -6,14 +6,17 @@ Description: Digtek - Digital Marketing Agency Html Template
 Version: 1.0.0
 */
 /*CSS Table Of Content Ends Here*/
+/* *{
+  background-color: orange;
+*/
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 :root {
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #6A47ED;
-  --theme2: #C6F806;
+  --theme: orange;
+  --theme2: #EE7006;
   --header: #17012C;
   --text: #504E4E;
   --border: #E5E5E5;
@@ -602,13 +605,18 @@ span {
   text-align: center;
   display: inline-block;
   font-size: 40px;
-  color: var(--white);
+  color: var(--theme);
 }
 .about-wrapper-2 .about-content .icon-items-area .icon-items .content {
   margin-top: 20px;
 }
 .about-wrapper-2 .about-content .icon-items-area .icon-items .content h3 {
   margin-bottom: 10px;
+}
+.about-wrapper-2 .about-content .icon-items-area .icon-items .content p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  line-height: 175%;
 }
 .about-wrapper-2 .about-content .about-button {
   display: flex;
@@ -1111,7 +1119,7 @@ span {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: var(--theme);
+  background-image: url('assets/img/hero/vecteezy_abstract-gradient-orange-color-background_10081966.jpg');
   right: 50px;
   left: 50px;
   border-radius: 30px;
@@ -1384,12 +1392,16 @@ span {
   border-radius: 10px;
   background: #FAF8FF;
 }
+.contact-info-items .icon {
+  font-size: 80px;
+  color: var(--theme);
+}
 .contact-info-items .content {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .contact-info-items .content p {
   font-size: 18px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .cta-wrapper {
@@ -1950,13 +1962,17 @@ span {
   }
 }
 .faq-wrapper .accordion-item .accordion-header .accordion-button::after {
+  content: "\f324";
+  font-family: "Font Awesome 6 Pro";
+  background: transparent;
   font-weight: 500;
   transition: all 0.3s ease-in-out !important;
-  background-image: url(../../assets/img/chevron-right.svg);
   color: var(--theme);
 }
 .faq-wrapper .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  background-image: url(../../assets/img/chevron-down.svg);
+  content: "\f322";
+  font-family: "Font Awesome 6 Pro";
+  background: transparent;
   font-weight: 500;
   color: var(--theme);
   transform: rotate(0);
@@ -2097,6 +2113,8 @@ span {
   height: 70px;
   line-height: 70px;
   text-align: center;
+  font-size: 40px;
+  color: var(--theme);
 }
 .feature-box-items .content {
   margin-top: 30px;
@@ -2141,7 +2159,7 @@ span {
   background: #F3F7FB;
   width: 70px;
   height: 70px;
-  line-height: 60px;
+  line-height: 70px;
   text-align: center;
   font-size: 40px;
   color: var(--theme);
@@ -2691,6 +2709,16 @@ span {
 }
 .header-1 .container-fluid {
   padding: 0 150px;
+}
+@media (max-width: 1600px) {
+  .header-1 .container-fluid {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1399px) {
+  .header-1 .container-fluid {
+    padding: 0 20px;
+  }
 }
 @media (max-width: 1199px) {
   .header-1 .container-fluid {
@@ -5077,7 +5105,7 @@ input.main-search-input::placeholder {
   font-size: 18px;
   position: fixed;
   display: inline-block;
-  z-index: 99;
+  z-index: 999;
   right: 30px;
   bottom: 30px;
   transition: all 0.4s ease-in-out;
@@ -6050,7 +6078,7 @@ input.main-search-input::placeholder {
 }
 
 .footer-bg {
-  background-color: #18185E;
+  background-color: #8B0000;
 }
 
 .section-padding {
