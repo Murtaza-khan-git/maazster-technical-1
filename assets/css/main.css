@@ -44,7 +44,7 @@ Version: 1.0.0
   padding: 19.5px 35px;
   border-radius: 30px;
 }
-@media (max-width: 575px) {
+@media (max-width: 44.921875vw) {
   .main-button .theme-btn {
     padding: 18px 30px;
     font-size: 14px;
