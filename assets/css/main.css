@@ -9,6 +9,26 @@ Version: 1.0.0
 /* *{
   background-color: orange;
 */
+body{
+  /* Default styles for larger screens */
+body {
+  font-size: 16px;
+}
+
+/* Styles for tablets */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+}
+
+/* Styles for mobile phones */
+@media (max-width: 480px) {
+  body {
+      font-size: 12px;
+  }
+}
+}
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 :root {
